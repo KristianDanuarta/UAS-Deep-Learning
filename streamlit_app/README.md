@@ -1,21 +1,20 @@
-# Mini Language Model Streamlit
+# Project Mini LM Colab Streamlit
 
-Aplikasi ini memuat `mini_lm_model.zip` hasil training dari Google Colab.
+Aplikasi web berbasis Streamlit dan PyTorch.
 
-## Cara menjalankan
+## Cara Menjalankan Aplikasi
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows PowerShell
-# source .venv/bin/activate    # macOS / Linux
-pip install -r requirements.txt
-streamlit run app.py
-```
+Ikuti langkah-langkah di bawah ini menggunakan **PowerShell** atau **Command Prompt**:
 
-Letakkan file `mini_lm_model.zip` pada folder:
+### 1. Pindah ke Folder Proyek
+```powershell
+cd C:\streamlit_app
 
-```text
-model_artifacts/mini_lm_model.zip
-```
+2. Buat Virtual Environment (.venv)
+py -m venv .venv
 
-Atau upload file ZIP langsung melalui antarmuka Streamlit.
+3. Instal Dependensi (Library)
+.venv\Scripts\python.exe -m pip install torch streamlit
+
+4. Jalankan Aplikasi Streamlit
+.venv\Scripts\python.exe -m streamlit run app.py --server.port 8502
